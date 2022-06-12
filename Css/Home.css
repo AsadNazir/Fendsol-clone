@@ -468,6 +468,10 @@ footer .BrandIdentity {
     width: clamp(7rem, 70%, 10rem);
 }
 
+.mainLogoFooter img {
+    width: clamp(7rem, 70%, 10rem);
+}
+
 
 /* footer Down over here */
 
