@@ -1,0 +1,100 @@
+/* Home page section padding issue resolved */
+
+@media only screen and (max-width: 800px) {
+     :root {
+        --padding: clamp(0.3rem, 1.5vw, 2rem) clamp(0.4rem, 4vw, 10rem);
+    }
+    /* Contact Leader Over here */
+    .conatactDivLeader {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .textofConatctDivLeader {
+        text-align: center;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+     :root {
+        --padding: clamp(1rem, 1vw, 2rem) clamp(1.5rem, 2vw, 10rem);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .HomePageMainSection {
+        background: linear-gradient(to right, #000000c5, #000000c5), url(../Images/Main_page_Background_image.jpg);
+        height: clamp(550px, 98vh, 600px);
+        background-position: center;
+        background-size: cover;
+        padding: var(--padding);
+    }
+    .HomePageContent {
+        width: clamp(200px, 100%, 700px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: clamp(4rem, 10vw, 10rem);
+    }
+    .navRightMenu {
+        display: none;
+    }
+    #MenuBtn {
+        display: block;
+    }
+    #RequestQuoteBtn a {
+        color: white;
+        border: none;
+    }
+    /* Help Section over here */
+    .helpCont {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    /* Portfolio Section  */
+    .portfolioCont {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    /* Customer Section */
+    .customerCont {
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Leadeer Over here */
+    .leaderCont {
+        flex-direction: column;
+    }
+    .leaderCont>div {
+        margin: 2rem 0;
+    }
+    .leaderCont h1 {
+        margin: 0;
+    }
+    .leaderCont p {
+        margin: 0;
+    }
+    /* Footer Section Over here */
+    .footerUp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerUp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerUp>div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .footerDown {
+        text-align: center;
+    }
+}

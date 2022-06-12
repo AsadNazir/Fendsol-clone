@@ -1,0 +1,477 @@
+:root {
+    --fs1: clamp(2.5rem, 4vw, 3.4rem);
+    --fs2: clamp(1.5rem, 2.5vw, 2.8rem);
+    --fs3: clamp(1.4rem, 1.7vw, 2.2rem);
+    --fs4: clamp( 1rem, 1.15vw, 1.8rem);
+    --padding: clamp(0.1rem, 1.5vw, 2rem) clamp(0.1rem, 14vw, 10rem);
+    --white: #ffff;
+    --black: rgb(14, 14, 14);
+    --teal: #eff2ff;
+    --font-clr: #54595f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+
+/* Utility Classes */
+
+.f1 {
+    font-size: var(--fs1);
+    font-family: 'Poppins', sans-serif;
+    line-height: 4rem;
+    font-weight: bolder;
+}
+
+.f2 {
+    font-size: var(--fs2);
+}
+
+.f3 {
+    font-size: var(--fs3);
+}
+
+.f4 {
+    font-size: var(--fs4);
+}
+
+.btn {
+    width: fit-content;
+    font-size: var(--fs4);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a {
+    color: var(--white);
+    background-color: var(--black);
+    padding: clamp(0.5rem, 1vw, 0.6rem) clamp(1rem, 2vw, 1.9rem);
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    font-size: var(--fs4);
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.btn i {
+    color: var(--white);
+    background-color: var(--black);
+    padding: clamp(0.5rem, 1vw, 0.6rem);
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: var(--fs4);
+}
+
+.btn i:hover {
+    cursor: pointer;
+}
+
+.btn a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+}
+
+
+/* Apply to all */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Remove this k */
+
+.cont {
+    height: 70vh;
+    border: 2px solid;
+    margin: 2rem;
+    display: grid;
+    place-items: center;
+    padding: var(--padding);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+/*  */
+
+
+/* Navbar Styling */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid green; */
+    /* width: 100%; */
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
+    color: var(--white);
+    margin-top: 0rem;
+    font-size: var(--fs4);
+}
+
+
+/* Left Nav */
+
+.navLeftLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLeftLogo img {
+    width: clamp(8rem, 11vw, 13rem);
+}
+
+
+/* Right nav */
+
+.navRightMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navRightMenu ul a {
+    color: var(--white);
+}
+
+.navRightMenu ul li {
+    margin: 0 1rem;
+}
+
+
+/* Menu Btn */
+
+#MenuBtn {
+    display: none;
+}
+
+.displayMenu {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    display: block;
+    top: 5rem;
+    z-index: 10;
+    width: 100%;
+}
+
+.displayMenu ul {
+    flex-direction: column;
+    background: white;
+    color: var(--black);
+}
+
+.displayMenu ul li a {
+    color: var(--black);
+}
+
+.displayMenu ul li {
+    margin: 0.7rem 0;
+    width: 100%;
+    text-align: center;
+    /* border-bottom: 2px solid rgb(198, 198, 198); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Home section over here */
+
+.HomePageMainSection {
+    background: linear-gradient(to right, #000000c5, #000000c5), url(../Images/Main_page_Background_image.jpg);
+    height: clamp(550px, 98vh, 900px);
+    background-position: center;
+    background-size: cover;
+    padding: var(--padding);
+}
+
+
+/* Home page content */
+
+.HomePageContent {
+    color: var(--white);
+    width: clamp(200px, 60%, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: clamp(4rem, 10vw, 10rem);
+}
+
+.HomePageContent p {
+    margin: 2rem 0;
+}
+
+.HomePageContent h1 {
+    margin-bottom: 1rem;
+}
+
+
+/* How can we help section */
+
+.HowCanWeHelp {
+    padding-top: 10rem;
+    background-color: var(--teal);
+    color: var(--black);
+    padding: var(--padding);
+}
+
+.HowCanWeHelp>h1 {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.HowCanWeHelp>p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.helpCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+    gap: 1rem;
+}
+
+.skillCont {
+    background-color: var(--white);
+    padding: clamp(1rem, 2vw, 2rem);
+}
+
+.skillCont p {
+    margin: 1rem 0;
+    color: var(--font-clr);
+}
+
+.skillCont .skillLogo {
+    margin: 1rem 0;
+    font-size: calc(var(--fs2) + 10px);
+}
+
+
+/* Porfolio Section */
+
+.Portfolio {
+    padding: var(--padding);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.Portfolio p {
+    margin: 2rem 0;
+    color: var(--font-clr);
+}
+
+.portfolioCont {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.Pimg {
+    width: 100%;
+}
+
+.Pimg img {
+    width: 100%;
+}
+
+.explore {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+/* Customers */
+
+.Customer {
+    padding: var(--padding);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.Customer p {
+    margin: 2rem 0;
+}
+
+.customerCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border: 2px solid whitesmoke; */
+}
+
+.Clogo {
+    padding: 2rem;
+    /* border: 2px solid whitesmoke; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Clogo img {
+    width: clamp(8rem, 70%, 13rem);
+}
+
+
+/* Reviews  */
+
+.Reviews {
+    padding: var(--padding);
+    text-align: center;
+    margin-top: 4rem;
+    background-color: var(--teal);
+}
+
+.Reviews>p {
+    margin: 2rem auto;
+    width: 50ch;
+}
+
+.Reviews>h1 {
+    margin-top: 2rem;
+}
+
+.priofilePic img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user p {
+    text-align: center;
+    margin: 0;
+}
+
+.user h1 {
+    margin: 0;
+}
+
+.user {
+    margin-bottom: 2rem;
+}
+
+
+/* LeaderShip section */
+
+.Leader {
+    padding: var(--padding);
+    text-align: center;
+    margin-top: 4rem;
+    background-color: var(--teal);
+    background-image: linear-gradient(180deg, var( --white) 0%, var( --teal) 100%);
+}
+
+.Leader>h1 {
+    margin-top: 2rem
+}
+
+.Leader>p {
+    margin: 4rem auto;
+    width: 50ch;
+}
+
+.leaderCont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.leaderCont img {
+    width: clamp(10rem, 80%, 20rem);
+}
+
+.leaderCont h1 {
+    margin: 1rem 0;
+}
+
+
+/* Contact Div Inside the LeaderShip */
+
+.conatactDivLeader {
+    display: flex;
+    background-color: var(--white);
+    width: fit-content;
+    margin: 4rem auto;
+    ;
+    max-width: 900px;
+    padding: clamp(2rem, 3vw, 2.5rem);
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 1px 9px 27px -14px grey;
+}
+
+.textofConatctDivLeader {
+    text-align: left;
+    margin-right: 4rem;
+}
+
+.textofConatctDivLeader p {
+    margin: 1rem 0;
+}
+
+
+/* Footer Section Over here */
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+}
+
+
+/* Footer Up here */
+
+.footerUp {
+    display: flex;
+    padding: var(--padding);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+}
+
+.footerUp ul,
+p {
+    margin-top: 2rem;
+}
+
+footer .BrandIdentity {
+    width: 30%;
+}
+
+.mainLogoFooter img {
+    width: clamp(7rem, 70%, 10rem);
+}
+
+
+/* footer Down over here */
+
+.footerDown {
+    padding: var(--padding);
+    border-top: 1px solid;
+}
