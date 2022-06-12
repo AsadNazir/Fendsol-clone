@@ -1,5 +1,5 @@
 :root {
-    --fs1: clamp(2.5rem, 4vw, 3.4rem);
+    --fs1: clamp(2.1rem, 4vw, 3.4rem);
     --fs2: clamp(1.5rem, 2.5vw, 2.8rem);
     --fs3: clamp(1.4rem, 1.7vw, 2.2rem);
     --fs4: clamp( 1rem, 1.15vw, 1.8rem);
@@ -347,7 +347,7 @@ nav {
 
 .Reviews>p {
     margin: 2rem auto;
-    width: 50ch;
+    width: clamp(30ch, 80%, 60ch);
 }
 
 .Reviews>h1 {
@@ -389,7 +389,7 @@ nav {
 
 .Leader>p {
     margin: 4rem auto;
-    width: 50ch;
+    width: clamp(30ch, 80%, 60ch);
 }
 
 .leaderCont {
@@ -470,6 +470,10 @@ footer .BrandIdentity {
 
 .mainLogoFooter img {
     width: clamp(7rem, 70%, 10rem);
+}
+
+.footerUp ul li a {
+    font-size: var(--fs4);
 }
 
 
