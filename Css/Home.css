@@ -1,8 +1,8 @@
 :root {
-    --fs1: clamp(2.1rem, 4vw, 3.4rem);
+    --fs1: clamp(1.9rem, 4vw, 3.4rem);
     --fs2: clamp(1.5rem, 2.5vw, 2.8rem);
-    --fs3: clamp(1.4rem, 1.7vw, 2.2rem);
-    --fs4: clamp( 1rem, 1.15vw, 1.8rem);
+    --fs3: clamp(1.3rem, 1.7vw, 2.2rem);
+    --fs4: clamp( 0.9rem, 1.15vw, 1.8rem);
     --padding: clamp(0.1rem, 1.5vw, 2rem) clamp(0.1rem, 14vw, 10rem);
     --white: #ffff;
     --black: rgb(14, 14, 14);
@@ -14,6 +14,7 @@
     padding: 0;
     margin: 0;
     transition: 0.2s all ease-in-out;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -262,6 +263,11 @@ nav {
 .skillCont p {
     margin: 1rem 0;
     color: var(--font-clr);
+    font-size: var(--fs4);
+}
+
+.skillCont h1 {
+    font-size: var(--fs3);
 }
 
 .skillCont .skillLogo {
